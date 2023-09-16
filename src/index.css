@@ -96,7 +96,9 @@ header p {
 }
 
 .glassList img {
-  padding: 4px;
-  border: 1px black;
+  padding: 10px;
+  border: 1px black solid;
+  border-radius: 5px;
   width: 100px;
+  cursor: pointer;
 }
