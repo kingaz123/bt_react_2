@@ -1,13 +1,103 @@
+* {margin: 0;
+padding: 0;
+box-sizing: border-box;}
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background-image: url("../public/img/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.276);
+  overflow-x: hidden;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); 
+  z-index: -1; 
+}
+
+
+
+header {
+  background-color: rgba(10, 10, 10, 0.7);
+  height: 100px;
+}
+header p {
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+  padding-top: 20px
+}
+.myTitle {
+  font-size: 35px;
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+}
+
+.modelWithGlass, .modelNoGlass {
+  width: 270px;
+  height: 350px;
+  margin-top: 50px;
+}
+
+.modelWithGlass {
+  margin-left: 300px;
+  position: relative;
+  overflow: hidden;
+}
+.modelNoGlass {
+  margin-right: 300px;
+}
+
+.glassOn {
+  position: absolute;
+  height: 50px;
+  width: 150px;
+  top: 140px;
+  left: 444px;
+  opacity: 0.6;
+}
+
+.glassInfo {
+  position: absolute;
+  bottom: 0;
+  right: 82px;
+  background-color: rgba(202, 101, 7, 0.4);
+  width: 270px;
+}
+.glassInfo h4 {
+  text-align: left;
+  padding-left: 10px;
+  margin-top: 5px;
+  font-size: 20px;
+  color: blue;
+}
+.glassInfo p {
+  text-align: left;
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+  padding: 0 5px;
+}
+
+.glassWrap {
+  height: 160px;
+  width: 760px;
+  background-color: white;
+  margin: 0 auto;
+  margin-top: 50px;
+  padding: 25px 40px;
+  border: black solid 5px;
+  border-radius: 10px;
+  
+}
+
+.glassList img {
+  padding:4px;
+  border: 1px black;
+  width: 100px;
 }
